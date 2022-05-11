@@ -1,0 +1,162 @@
+.container{
+    width: 100%;
+}
+
+header{
+    /* padding: 0.5rem; */
+    padding-left: 2rem;
+    border-bottom: 1px solid black;
+    position:fixed;
+    width: 100%;
+    background-color: white;
+    margin-top: -10px;
+    z-index: 2;
+      
+}
+
+h2{
+    font-size: xx-large;   
+}
+
+h4{
+    font-weight: 300;
+}
+
+p{
+    color: gray;
+}
+
+.product__image{
+    text-align: center;
+}
+
+.product_list{
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+    right: 0.5rem;
+
+
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    gap: 2rem;
+}
+
+.product__listt{
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+    right: 5rem;
+    
+}
+
+.product__card{
+    height: 22rem;
+    width: 15rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px gray;
+    transition: 200ms all;
+   
+}
+
+.product__card:hover{
+    box-shadow: 0px 0px 20px gray;
+    
+}
+
+.product__image >img{
+    height: 10rem;
+    width: 10rem;
+    
+    display: inline-block;
+    background-size: contain;
+    margin: 0.5rem;
+    
+
+}
+.product__details{
+    height: 40%;
+    padding: 0.5rem;
+    border-top: 1px solid black;
+    position: relative;
+}
+.lines {
+
+    /* display:-webkit-box; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.tags{
+    position:absolute;
+    left: 1rem;
+    bottom: -20px;
+}
+
+/* -------------------- */
+
+.product-card{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    width: 80%;
+    padding: 1rem;
+    height: 80%;
+    box-shadow: 0 0 10px gray;
+    border-radius: 1rem;
+    
+}
+
+.product-image >img{
+    width: 330px;
+    height: 300px;
+    
+}
+
+.product-image{
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+.product-details{
+    padding: 1rem;
+}
+
+.product-details > h2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.product-details > h3{
+    background-color: aqua;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 0 1rem 1rem 0;
+
+}
+
+
+.product-details > h4{
+    line-height: 1.2rem;
+    color:brown;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border:1px solid black;
+    background-color:lightgray;
+}
+
+.product-details >button{
+    background-color: red;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+}
